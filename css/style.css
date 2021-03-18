@@ -1,0 +1,417 @@
+*{
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+	
+}
+
+body ,html{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	margin:auto;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#slider{
+	background-color:#ffffff;
+	width:100%;
+	height:490px;
+	position:relative;
+	margin:auto;
+	overflow:hidden;
+	bordre-radius:10px;
+	border:2px solid black;
+	
+}
+.slides{
+	width:500%;
+	height:500px;
+	display:flex;
+	
+}
+.slides input{
+	display:none;
+	margin:auto;
+	text-align:center;	
+    align-content:center;
+}
+.slide{
+	width:20%;
+	transition:2s;
+}
+.slide img{
+	width:800px;
+	height:500px;
+}
+.navigation-manual{
+	position:absolute;
+	width:800px;
+	margin-top:-40px;
+	display:flex;
+	justify-content:center;
+	
+
+}
+.manual-btn{
+	border:2px solid #40D3DC;
+	padding:5px;
+	bordre-radius:10px;
+	cursor:pointer;
+	transition:1s;
+	margin:0;
+	text-align:center;	
+    align-content:center;
+	
+}
+.manual-btn:not(:last-child){
+	margin-right:40px;
+	text-align:center;	
+    align-content:center;
+	
+}
+.manual-btn:hover{
+	background:#40D3DC;
+}
+#radio1:checked ~ .first{
+	margin-left:0;
+}
+#radio2:checked ~ .first{
+	margin-left:-20%;
+}
+#radio3:checked ~ .first{
+	margin-left:-40%;
+}
+#radio4:checked ~ .first{
+	margin-left:-60%;
+}
+#radio5:checked ~ .first{
+	margin-left:-80%;
+}
+
+.navigation-auto{
+	position:absolute;
+	display:flex;
+	width:800px;
+	justify-content:center;
+	margin-top:460px;
+}
+.navigation-auto div{
+	border:2px solid #40D3DC;
+	padding:5px;
+	border-radius:10px;
+	transition:1s;
+}
+.navigation-auto div:not(:last-child){
+	margin-right:40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background:#40D3DC;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background:#40D3DC;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background:#40D3DC;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background:#40D3DC;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+	background:#40D3DC;
+}
+
+#img{
+	width:100%;
+	height:490px;
+	position:relative;
+	text-align:center;	
+    align-content:center;
+	margin:auto;
+	display:block;
+	
+}
+
+.banner_image{
+	background-image:url(../image/p10.jpg);
+	filter:blur(px);
+	-webkit-background-size:cover;
+	background-repeat:no-repeat fixed;
+}
+.banner_image2{
+	background-image:linear-gradient(rgba(0.2,0,0,0.2),rgba(0.2,0,0,0.2)),url(../image/p5.jpg);
+	height:100%;
+	filter:blur(px);
+	-webkit-background-size:cover;
+	background-repeat:no-repeat fixed;
+	/*background-position:center;/**/
+}
+.banner_image3{
+	background-image:linear-gradient(rgba(9,0.2,1,0.1),rgba(9,0.2,1,0.1)),url(../image/p5.jpg);
+	height:360h;
+	filter:blur(px);
+	-webkit-background-size:cover;
+	background-repeat:no-repeat fixed;
+	background-position:center;
+}
+.banner_image1{
+	background-image:linear-gradient(rgba(9,0.2,1,0.1),rgba(9,0.2,1,0.1)),url(../image/p5.jpg);
+	height:300vh;
+	filter:blur(px);
+	-webkit-background-size:cover;
+	background-repeat:no-repeat fixed;
+	background-position:center;
+}
+#btn_left{
+	height:500px;
+	width:100px;
+	left:0px;
+	top:0px;
+	position:absolute;
+	
+	
+}
+#btn_right{
+	height:500px;
+	width:100px;
+	right:0px;
+	top:0px;
+	position:absolute;
+	
+}
+.left{
+	position:absolute;
+	top:40%;
+	left:5px;
+	width:50px;
+	height:60px;
+	opacity:0.4;
+	
+}.left:hover{
+	opacity:1;
+}
+.right{
+	position:absolute;
+	top:40%;
+	right:5px;
+	width:40px;
+	height:40px;
+	opacity:0.4;
+	
+}.right:hover{
+	opacity:1;
+}
+
+sup span{
+	background:#F00A3C;color:white;
+ font-size:14px;padding:0.5em;margin:0;
+ border:1px solid black;
+ text-decoration:none;
+}
+#menu{
+	background:#333;
+	position:fixed;
+	top:0;
+	overflow:hidden;
+	border:1px solid black;
+	z-index:1;
+	
+	
+}
+
+<!--/*********debut page produits *********/-->
+
+#menu1{
+	background:#333;
+	position:relative;
+	top:0;overflow:hidden;
+	border:1px solid black;
+	z-index:1;
+}
+#menu1 ul {
+	list-style-type:none;
+	margin:0;padding:0;
+	overflow:hidden;
+	background-color:#333;
+}
+#menu1 ul li{
+	float:left;
+}
+<!--/********* fin *********/-->
+
+
+
+#menu ul {
+	list-style-type:none;
+	margin:0;padding:0;
+	overflow:hidden;
+	background-color:#333;
+}
+#menu ul li{
+	float:left;
+}
+li  a{
+	color:white;text-align:center;padding:12px 14px;
+	text-decoration:none;
+	display:block;
+}
+li a:hover:not(.active){ 
+	background:#F00A3C;
+}
+.active{
+	background:#F00A3C;
+}
+#contenu{
+	width:90%;
+	margin-left:auto;margin-right:auto;
+	border-bottom-width:0px;
+	padding-left:0px;padding-top:20px;
+	padding-right:0px;padding-bottom:0px;
+	
+}
+.titre_section{
+	font-size:26px;
+	width:90%;margin-top:20px;
+	color:#303336;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:20px;
+	
+}
+p{
+	text-align:justify;
+	line-height:24px;
+	margin-top:30px;
+	margin-bottom:15px;
+	color:#000;
+}
+.colonne{
+	position:relative;
+	float:left;
+	width:30%;
+	min-height:200px;
+	text-align:center;
+	margin:10px;
+	padding:5px;
+	z-index:1;
+}
+
+.colonne::after{
+	z-index:-1;
+}
+
+.image{
+	opacity:1;
+	display:block;
+	width:100%;height:180px;
+	transition:0.5s ease;
+	backface-visibility:hidden;
+	z-index:0;
+	
+}
+
+.middle{
+	transition:0.5s ease;
+	opacity:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.text{
+	position:relative;
+	background:#F00A3C;
+	colonne:#FCFBFB;
+	font-size:16px;
+	padding:16px 32px;
+	cursor:pointer;
+}
+.text1{
+	position:relative;
+	background:#F00A3C;
+	colonne:#FAFBFB;
+	font-size:18px;
+	padding:8px 16px;
+	cursor:pointer;
+	color:white;
+}
+.colonne:hover .middle{
+	opacity:1;
+}
+
+.inscription_boite{
+	font-family:cambria,"hoefler text";
+	padding:6% 0;
+	text-align:center;
+	clear:left;
+}
+.inscription_boite h2{
+	margin:0 0 1% 0;
+	font-weight:100;
+	font-size:30px;
+	
+}
+
+.inscription_boite .inscription{
+	width:100%;max-width:600px;
+	margin:auto;
+}
+.inscription_boite .inscription input{
+	width:100%;background-color:transparent;border:0;
+	border-bottom:1px solid #F00A3C;
+	padding:1% 0 1% 0;
+	text-align:center;
+	font-family:inherit;
+	font-weight:300;
+	line-height:1.5;
+	color:aliceblue;
+	outline:none;
+}
+.inscription_boite .inscription button{
+	margin-top:3%;
+	background:transparent;
+	border:2px solid #F00A3C;
+	border-radius:50px;
+	padding:10px 40px;
+	cursor:pointer;
+	display:inline-block;
+	font-weight:700;
+	position:relative;
+	transition:2s;
+	
+	
+}
+.inscription_boite .inscription button:hover{
+	color:#F00A3C;
+	padding:10px 40px;
+	transition:2s;
+	
+}
+.footer{
+	clear:left;
+	padding:22px;
+	bottom:0;
+	text-align:center;
+	margin-top:auto;
+	background-color:#000;
+	}
+	
+.footer h3{
+	color:#FFFFFF;
+	margin:2px;
+}
+.S{
+	margin:3px;
+	width:30px;
+	height:30px;
+	border-radius:20px;
+	
+}
+.S:hover{
+	border-radius:5px;
+	
+}
+
+
+
